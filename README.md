@@ -7,5 +7,7 @@ Usage
 =====
 
 etags --regex=@php5.tags php-file
+
 When using with find put '-' to the end of the comman line:
+
 find . -type f -name "*.php" | --regex=@php5.tags -
