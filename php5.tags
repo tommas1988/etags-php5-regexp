@@ -1,0 +1,19 @@
+    # member method
+/^[ \t]*public[ \t]+function[ \t\n]+[^ \t\n(]+/
+/^[ \t]*protected[ \t]+function[ \t\n]+[^ \t\n(]+/
+/^[ \t]*private[ \t]+function[ \t\n]+[^ \t\n(]+/
+    # static method
+/^[ \t]*public[ \t]+static[ \t]+function[ \t\n]+[^ \t\n(]+/
+/^[ \t]*protected[ \t]+static[ \t]+function[ \t\n]+[^ \t\n(]+/
+/^[ \t]*private[ \t]+static[ \t]+function[ \t\n]+[^ \t\n(]+/
+    # member variable
+/^[ \t]*public[ \t\n]+\$\([^ \t\n=;]+\)/\1/
+/^[ \t]*protected[ \t\n]+\$\([^ \t\n=;]+\)/\1/
+/^[ \t]*private[ \t\n]+\$\([^ \t\n=;]+\)/\1/
+    # static variable
+/^[ \t]*public[ \t]+static[ \t\n]+\$[^ \t\n=;]+/
+/^[ \t]*protected[ \t]+static[ \t\n]+\$[^ \t\n=;]+/
+/^[ \t]*private[ \t]+static[ \t\n]+\$[^ \t\n=;]+/
+    # constant
+/^[ \t]*const[ \t\n]+[^ \t\n=;]+/
+
