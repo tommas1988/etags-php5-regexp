@@ -1,11 +1,11 @@
     # member method
-/^[ \t]*public[ \t]+function[ \t\n]+[^ \t\n(]+/
-/^[ \t]*protected[ \t]+function[ \t\n]+[^ \t\n(]+/
-/^[ \t]*private[ \t]+function[ \t\n]+[^ \t\n(]+/
+/^[ \t]*public[ \t]+function[ \t\n]+\([^ \t\n(]+\)/\1/
+/^[ \t]*protected[ \t]+function[ \t\n]+\([^ \t\n(]+\)/\1/
+/^[ \t]*private[ \t]+function[ \t\n]+\([^ \t\n(]+\)/\1/
     # static method
-/^[ \t]*public[ \t]+static[ \t]+function[ \t\n]+[^ \t\n(]+/
-/^[ \t]*protected[ \t]+static[ \t]+function[ \t\n]+[^ \t\n(]+/
-/^[ \t]*private[ \t]+static[ \t]+function[ \t\n]+[^ \t\n(]+/
+/^[ \t]*public[ \t]+static[ \t]+function[ \t\n]+\([^ \t\n(]+\)/\1/
+/^[ \t]*protected[ \t]+static[ \t]+function[ \t\n]+\([^ \t\n(]+\)/\1/
+/^[ \t]*private[ \t]+static[ \t]+function[ \t\n]+\([^ \t\n(]+\)/\1/
     # member variable
 /^[ \t]*public[ \t\n]+\$\([^ \t\n=;]+\)/\1/
 /^[ \t]*protected[ \t\n]+\$\([^ \t\n=;]+\)/\1/
