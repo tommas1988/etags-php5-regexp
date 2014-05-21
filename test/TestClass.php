@@ -1,7 +1,17 @@
 <?php
 namespace EtagsPHPEnhancement;
 
-class TestClass
+interface TestInterface
+{
+}
+
+abstract class AbstractTestClass
+{
+    abstract public function testMethod();
+    abstract public function testProperty();
+}
+
+class TestClass extends AbstractTestClass
 {
     const TEST_CONST = 'test constant';
 
@@ -69,5 +79,13 @@ class TestClass
     private static function privateStaticMethod()
     {
         // private static method
+    }
+}
+
+final class TestFinalClass
+{
+    final public function test()
+    {
+        //
     }
 }

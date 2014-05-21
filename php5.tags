@@ -1,19 +1,13 @@
-    # member method
-/^[ \t]*public[ \t]+function[ \t\n]+\([^ \t\n(]+\)/\1/
-/^[ \t]*protected[ \t]+function[ \t\n]+\([^ \t\n(]+\)/\1/
-/^[ \t]*private[ \t]+function[ \t\n]+\([^ \t\n(]+\)/\1/
-    # static method
-/^[ \t]*public[ \t]+static[ \t]+function[ \t\n]+\([^ \t\n(]+\)/\1/
-/^[ \t]*protected[ \t]+static[ \t]+function[ \t\n]+\([^ \t\n(]+\)/\1/
-/^[ \t]*private[ \t]+static[ \t]+function[ \t\n]+\([^ \t\n(]+\)/\1/
+    # class
+/^[ \t]*\(?:final\|abstract\)[ \t]+class[ \t\n]+\([^ \t\n]+\)/\1/
+    # interface
+/^[ \t]*interface[ \t\n]+\([^ \t\n]+\)/\1/
+    # method
+/^[ \t]*\(?:\(?:final\|abstract\)[ \t]+\)?\(?:public\|protected\|private\)[ \t]+\(?:static[ \t\n]+\)?function[ \t\n]+\([^ \t\n(]+\)/\1/
     # member variable
-/^[ \t]*public[ \t\n]+\$\([^ \t\n=;]+\)/\1/
-/^[ \t]*protected[ \t\n]+\$\([^ \t\n=;]+\)/\1/
-/^[ \t]*private[ \t\n]+\$\([^ \t\n=;]+\)/\1/
+/^[ \t]*\(?:public\|protected\|private\)[ \t\n]+\$\([^ \t\n=;]+\)/\1/
     # static variable
-/^[ \t]*public[ \t]+static[ \t\n]+\$[^ \t\n=;]+/
-/^[ \t]*protected[ \t]+static[ \t\n]+\$[^ \t\n=;]+/
-/^[ \t]*private[ \t]+static[ \t\n]+\$[^ \t\n=;]+/
+/^[ \t]*\(?:public\|protected\|private\)[ \t]+static[ \t\n]+\(\$[^ \t\n=;]+\)/\1/
     # constant
-/^[ \t]*const[ \t\n]+[^ \t\n=;]+/
+/^[ \t]*const[ \t\n]+\([^ \t\n=;]+\)/\1/
 

@@ -2,6 +2,7 @@
 include 'TestClass.php';
 
 use EtagsPHPEnhancement\TestClass;
+use EtagsPHPEnhancement\TestFinalClass;
 
 $obj = new TestClass();
 
@@ -18,3 +19,6 @@ echo TestClass::TEST_CONST;
 TestClass::testStaticProperty();
 // test static method
 TestClass::testStaticMethod();
+
+$obj = new TestFinalClass();
+$obj->test();
